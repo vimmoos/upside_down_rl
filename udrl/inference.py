@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from .policies import SklearnPolicy, NeuralPolicy
-from .agent import UpsideDownAgent, AgentHyper
+from udrl.policies import SklearnPolicy, NeuralPolicy
+from udrl.agent import UpsideDownAgent, AgentHyper
 from pathlib import Path
 from collections import Counter
 from tqdm import trange

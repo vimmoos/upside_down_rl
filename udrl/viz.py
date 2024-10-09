@@ -1,8 +1,8 @@
 import gymnasium as gym
 import pygame
 import numpy as np
-from .policies import SklearnPolicy
-from .agent import UpsideDownAgent, AgentHyper
+from udrl.policies import SklearnPolicy
+from udrl.agent import UpsideDownAgent, AgentHyper
 from pathlib import Path
 import json
 

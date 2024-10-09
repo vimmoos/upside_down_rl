@@ -1,5 +1,5 @@
-from .policies import SklearnPolicy
-from .agent import UpsideDownAgent, AgentHyper
+from udrl.policies import SklearnPolicy
+from udrl.agent import UpsideDownAgent, AgentHyper
 from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
