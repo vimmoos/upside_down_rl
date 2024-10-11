@@ -62,6 +62,7 @@ def next_epoch(state: State):
 
 
 def update_frame(state: State):
+    state.prev_frame = state.frame
     state.frame = resize(state.env.render(), (400, 600, 3))
     while len(state.frame) < 1:
         state.frame = resize(state.env.render(), (400, 600, 3))
@@ -192,7 +193,7 @@ def make_viz(state):
             st.header("Environment Visualization", divider=True)
             image_placeholder = st.empty()
             image_placeholder.image(
-                state.frame,
+                state.frame if len(state.frame) > 2 else state.prev_frame,
                 caption=f"Environment Visualization {'(Paused)' if state.paused else ''}",
                 use_column_width=True,
             )
