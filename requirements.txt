@@ -4,7 +4,7 @@ blinker==1.8.2
 box2d-py==2.3.5
 cachetools==5.5.0
 certifi==2024.8.30
-charset-normalizer==3.3.2
+charset-normalizer==3.4.0
 click==8.1.7
 cloudpickle==3.0.0
 contourpy==1.3.0
@@ -25,12 +25,12 @@ jsonschema-specifications==2024.10.1
 kiwisolver==1.4.7
 lazy_loader==0.4
 markdown-it-py==3.0.0
-MarkupSafe==3.0.0
+MarkupSafe==3.0.1
 matplotlib==3.9.2
 mdurl==0.1.2
 mpmath==1.3.0
-narwhals==1.9.1
-networkx==3.3
+narwhals==1.9.2
+networkx==3.4
 numpy==1.24.4
 nvidia-cublas-cu12==12.1.3.1
 nvidia-cuda-cupti-cu12==12.1.105
@@ -44,6 +44,7 @@ nvidia-cusparse-cu12==12.1.0.106
 nvidia-nccl-cu12==2.20.5
 nvidia-nvjitlink-cu12==12.6.77
 nvidia-nvtx-cu12==12.1.105
+opencv-python==4.10.0.84
 packaging==24.1
 pandas==2.2.3
 pillow==10.4.0
@@ -52,6 +53,7 @@ pyarrow==17.0.0
 pydeck==0.9.1
 pygame==2.6.1
 Pygments==2.18.0
+pyinstrument==4.1.1
 pylatexenc==2.10
 pyparsing==3.1.4
 python-dateutil==2.9.0.post0
@@ -68,6 +70,7 @@ smmap==5.0.1
 st-pages==1.0.1
 streamlit==1.39.0
 streamlit-javascript==0.1.5
+streamlit-profiler==0.2.4
 swig==4.2.1
 sympy==1.13.3
 tenacity==9.0.0

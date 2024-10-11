@@ -34,6 +34,8 @@ streamlit = "^1.39.0"
 st-pages = "^1.0.1"
 streamlit-javascript = "^0.1.5"
 pylatexenc = "^2.10"
+streamlit-profiler = "^0.2.4"
+opencv-python = "^4.10.0.84"
 
 
 [build-system]

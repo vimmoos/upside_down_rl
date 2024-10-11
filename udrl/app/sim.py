@@ -15,6 +15,7 @@ from udrl.policies import SklearnPolicy, NeuralPolicy
 import altair as alt
 import pandas as pd
 import json
+import cv2
 
 # from pylatexenc.latex2text import LatexNodes2Text
 
@@ -63,9 +64,15 @@ def next_epoch(state: State):
 
 def update_frame(state: State):
     state.prev_frame = state.frame
-    state.frame = resize(state.env.render(), (400, 600, 3))
+    # state.frame = resize(state.env.render(), (400, 600, 3))
+    state.frame = cv2.resize(
+        state.env.render(), (600, 400), interpolation=cv2.INTER_AREA
+    )
     while len(state.frame) < 1:
-        state.frame = resize(state.env.render(), (400, 600, 3))
+        state.frame = cv2.resize(
+            state.env.render(), (600, 400), interpolation=cv2.INTER_AREA
+        )
+        # state.frame = resize(state.env.render(), (400, 600, 3))
 
 
 def reset_env(state: State):
@@ -226,7 +233,6 @@ def make_viz(state):
                     {
                         "f": state.feature_importances,
                         "index": [
-                            # LatexNodes2Text().latex_to_text(v[0])
                             v[1][:17]
                             for v in load_env_info(state.env_name)[
                                 "state"
@@ -250,7 +256,7 @@ def make_viz(state):
                 )
 
                 st.altair_chart(
-                    base + base.mark_text(align="left", dx=2),
+                    base,
                     use_container_width=True,
                 )
 
@@ -381,7 +387,11 @@ def run(state: State):
     sidebar_container = st.sidebar.container()
     with sidebar_container:
         st.slider(
-            "Refresh Rate", min_value=1, max_value=20, key="refresh_rate"
+            "Refresh Rate",
+            min_value=1,
+            max_value=15,
+            key="refresh_rate",
+            value=7,
         )
         st.header("Environment Info")
         for line in env_info_md(state.env_name).split("\n"):
@@ -406,4 +416,7 @@ def run(state: State):
 if "sim" not in st.session_state:
     st.session_state.sim = init()
 
+# from streamlit_profiler import Profiler
+# with Profiler():
+#     run(st.session_state.sim)
 run(st.session_state.sim)
