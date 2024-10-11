@@ -1,0 +1,10 @@
+[[pages]]
+path = "udrl/app/home.py"
+name = "Home"
+icon = "🏠"
+
+[[pages]]
+path = "udrl/app/sim.py"
+name = "Feature Importance Visualization"
+icon = ":robot_face:"
+url_path = "simulation"

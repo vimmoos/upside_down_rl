@@ -1,0 +1,14 @@
+
+{
+    "env_name": "LunarLander-v2",
+    "state": {
+	"0":["$x$","X position"],
+	"1":["$y$","Y position"],
+	"2":["$\\dot{x}$","X linear velocity"],
+	"3":["$\\dot{y}$","Y linear velocity"],
+	"4":["$\\theta$","Angle"],
+	"5":["$\\dot{\\theta}$","Angular velocity"],
+	"6":["L_contact","Left leg contact points"],
+	"7":["R_contact","Right leg contact points"]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "env_name": "CartPole-v0",
+    "estimator_name": "neural",
+    "seed": 44,
+    "max_episode": 500,
+    "collect_iter": 15,
+    "train_per_iter": 100,
+    "batch_size": 256,
+    "warm_up": 260,
+    "memory_size": 700,
+    "last_few": 75,
+    "testing_period": 10,
+    "horizon_scale": 0.02,
+    "return_scale": 0.02,
+    "epsilon": 0.2,
+    "final_desired_return": 200,
+    "final_desired_horizon": 200
+}

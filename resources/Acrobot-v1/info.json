@@ -1,0 +1,11 @@
+{
+    "env_name": "Acrobot-v1",
+    "state": {
+	"0":["$\\sin{\\theta_1}$","Sine of the first link" ],
+	"1":["$\\cos{\\theta_1}$","Cosine of the first link" ],
+	"2":["$\\sin{\\theta_2}$","Sine of the second link" ],
+	"3":["$\\cos{\\theta_2}$","Cosine of the second link" ],
+	"4":["$\\dot{\\theta}_1$","Angular velocity of first link" ],
+	"5":["$\\dot{\\theta}_2$","Angular velocity of second link" ]
+    }
+}
