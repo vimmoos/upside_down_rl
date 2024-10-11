@@ -8,7 +8,7 @@ python_version: "3.10"
 sdk_version: 1.39.0
 app_file: app.py
 pinned: true
-short_description: Upside-Down Reinforcement Learning (UDRL) - A novel approach that transforms reinforcement learning into a supervised learning problem by learning to predict actions from states and desired commands, rather than predicting rewards.
+short_description: Upside-Down Reinforcement Learning (UDRL)
 tags:
   - reinforcement learning
   - RL
