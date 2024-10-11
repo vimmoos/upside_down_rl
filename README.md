@@ -1,13 +1,20 @@
 ---
-title: Test
-emoji: 📚
+title: Upside-Down Reinforcement Learning
+emoji: 🤖
 colorFrom: green
 colorTo: gray
 sdk: streamlit
 python_version: "3.10"
 sdk_version: 1.39.0
 app_file: app.py
-pinned: false
+pinned: true
+short_description: Upside-Down Reinforcement Learning (UDRL) - A novel approach that transforms reinforcement learning into a supervised learning problem by learning to predict actions from states and desired commands, rather than predicting rewards.
+tags:
+  - reinforcement learning
+  - RL
+  - upside-down reinforcement learning
+  - interpretability
+  - explainable AI
 ---
 
 # Upside-Down RL
