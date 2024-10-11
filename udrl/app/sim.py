@@ -45,6 +45,7 @@ class State(BaseState):
     feature_importances: List[float] = field(init=False, default_factory=list)
     env: gym.Env = field(init=False)
     frame: np.array = field(init=False, default=None)
+    prev_frame: np.array = field(init=False, default=None)
     obs: np.array = field(init=False)
 
     def __post_init__(self):
@@ -62,6 +63,8 @@ def next_epoch(state: State):
 
 def update_frame(state: State):
     state.frame = resize(state.env.render(), (400, 600, 3))
+    while len(state.frame) < 1:
+        state.frame = resize(state.env.render(), (400, 600, 3))
 
 
 def reset_env(state: State):
@@ -240,7 +243,7 @@ def make_viz(state):
                             scale=alt.Scale(domain=[-10, 30]),
                         ),
                         y="index:O",
-                        color="index:N",
+                        color=alt.Color("index:N", legend=None),
                     )
                     .properties(height=int(val))
                 )
@@ -326,9 +329,9 @@ def make_metrics(state: State):
     with col1:
         st.metric("Epoch", state.epoch)
     with col2:
-        st.metric("Cum Reward", state.reward)
+        st.metric("Cum Reward", f"{state.reward:.2f}")
     with col3:
-        st.metric("Desired Return", state.desired_return)
+        st.metric("Desired Return", f"{state.desired_return:.2f}")
     with col4:
         st.metric("Desired Horizon", state.desired_horizon)
 
