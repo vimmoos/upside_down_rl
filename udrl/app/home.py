@@ -14,6 +14,12 @@ st.html(
             </div>
 <h2><a href="https://arxiv.org/abs/2411.11457" target="_blank">Read the full paper on arXiv</a></h2>
 
+    <div class="abstract">
+        <h2>Abstract</h2>
+        <p>Model-Free Reinforcement Learning (RL) algorithms either learn how to map states to expected rewards or search for policies that can maximize a certain performance function. Model-Based algorithms instead, aim to learn an approximation of the underlying model of the RL environment and then use it in combination with planning algorithms. Upside-Down Reinforcement Learning (UDRL) is a novel learning paradigm that aims to learn how to predict actions from states and desired commands. This task is formulated as a Supervised Learning problem and has successfully been tackled by Neural Networks (NNs). In this paper, we investigate whether function approximation algorithms other than NNs can also be used within a UDRL framework. Our experiments, performed over several popular optimal control benchmarks, show that tree-based methods like Random Forests and Extremely Randomized Trees can perform just as well as NNs with the significant benefit of resulting in policies that are inherently more interpretable than NNs, therefore paving the way for more transparent, safe, and robust RL.
+    </p>
+    </div>
+
         <section class="motivation">
             <h2>Research Motivation</h2>
             <p>The dramatic growth in adoption of Neural Networks (NNs) within the last 15 years has sparked a crucial need for increased transparency, especially in high-stake applications. While NNs have demonstrated remarkable performance across various domains, they are essentially black boxes whose decision-making processes remain opaque to human understanding. This research addresses this fundamental challenge by exploring alternative approaches that maintain performance while dramatically improving interpretability.</p>
