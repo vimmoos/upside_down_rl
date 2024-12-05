@@ -265,7 +265,8 @@ def make_viz(state):
 
 def make_commands(state):
     # Add control buttons in a horizontal layout
-    col1, col2, col3, col4 = st.columns(4)
+    # col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
     with col1:
         st.button("Reset Environment", on_click=state.reset_env)
     with col2:
@@ -274,8 +275,8 @@ def make_commands(state):
         )
     with col3:
         st.button("Next", on_click=state.next_epoch)
-    with col4:
-        st.button("Save")
+    # with col4:
+    #     st.button("Save")
     return state
 
 
