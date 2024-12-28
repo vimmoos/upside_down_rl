@@ -17,13 +17,15 @@ tags:
   - explainable AI
 ---
 
+<img alt="Version" src="./website_photo.jpg" />
+
 # Upside-Down RL
 
 This project implements an Upside-Down Reinforcement Learning (UDRL) agent.
 
 This is the codebase of the paper: [arXiv](https://arxiv.org/abs/2411.11457)
 
-The website associated with it is: [demo](https://huggingface.co/spaces/vimmoos/udrl)
+The website associated with it is: [demo](https://vimmoos-udrl.hf.space/)
 
 
 ### Installation
