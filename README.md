@@ -20,6 +20,9 @@ tags:
 # Upside-Down RL
 
 This project implements an Upside-Down Reinforcement Learning (UDRL) agent.
+This is the codebase of the paper: [arXiv](https://arxiv.org/abs/2411.11457)
+The website associated with it is: [demo](https://huggingface.co/spaces/vimmoos/udrl)
+
 
 ### Installation
 
@@ -54,7 +57,6 @@ Available options include:
 * `--batch_size`: Batch size for training (default: `0`, uses entire replay buffer)
 * Other options related to warm-up, memory size, exploration, testing, saving, etc.
 
-**NOTE** Cartpole, Acrobot, Mountain car and LunarLander envs were tested
 
 ### Result Data
 
@@ -79,4 +81,4 @@ Please refer to the code and comments for further details on the implementation.
 
 ## Troubleshooting
 
-If you encounter any errors during installation or execution, or if you have any questions about the project, feel free to reach out to me at [massimiliano@falzari.dev](mailto:massimiliano@falzari.dev). I'll be happy to assist you!
+If you encounter any errors during installation or execution, or if you have any questions about the project, feel free to reach out to me at [massimiliano@falzari.dev](mailto:massimiliano@falzari.dev) or open an issue. I'll be happy to assist you!
