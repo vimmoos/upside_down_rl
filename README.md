@@ -17,9 +17,10 @@ tags:
   - explainable AI
 ---
 
+# Upside-Down RL
+
 <img alt="Version" src="./website_photo.jpg" />
 
-# Upside-Down RL
 
 This project implements an Upside-Down Reinforcement Learning (UDRL) agent.
 
